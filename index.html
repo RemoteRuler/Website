@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remote Ruler - My Services</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="music-toggle" id="music-toggle" title="Toggle Music">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 18V5l12-2v13"></path>
+      <circle cx="6" cy="18" r="3"></circle>
+      <circle cx="18" cy="16" r="3"></circle>
+    </svg>
+  </div>
+  <audio id="bg-music" loop>
+    <source src="background-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="https://github.com/RemoteRuler/Website/blob/main/Logo/Remote_Ruler.png?raw=true"
+          alt="Remote Ruler Logo" />
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#home"><img src="https://img.icons8.com/ios-filled/24/000000/home.png" alt="Home Icon" />
+            <span>Home</span></a>
+        </li>
+        <li>
+          <a href="#services"><img src="https://img.icons8.com/ios-filled/24/000000/services.png" alt="Service Icon" />
+            <span>Service</span></a>
+        </li>
+        <li>
+          <a href="#tools"><img src="https://img.icons8.com/ios-filled/24/000000/wrench.png" alt="Tool Icon" />
+            <span>Tool</span></a>
+        </li>
+
+        <li>
+          <a href="#about"><img src="https://img.icons8.com/ios-filled/24/000000/about.png" alt="About Icon" />
+            <span>About</span></a>
+        </li>
+        <li>
+          <a href="#contact"><img src="https://img.icons8.com/ios-filled/24/000000/contact-card.png"
+              alt="Contact Icon" />
+            <span>Contact</span></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <canvas id="hero-canvas"></canvas>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="line-msg">Welcome</span>
+        <span class="line-msg">To</span>
+        <span class="line-msg"><span class="remote-text">Remote</span> <span class="ruler-text">Ruler</span></span>
+      </h1>
+      <p class="animate-on-scroll">Your partner in success.</p>
+      <a href="https://www.facebook.com/RemoteRuler" class="btn animate-on-scroll delay-100">Learn More</a>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2 class="animate-on-scroll">Our Service</h2>
+    <div class="service-grid">
+      <div class="service-item animate-on-scroll">
+        <h3>Web Development</h3>
+        <p>
+          We build responsive, high-performance websites tailored to your business needs, ensuring a seamless user
+          experience and robust functionality using modern technologies.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Digital Marketing</h3>
+        <p>
+          Digital marketing promotes brands online using SEO, social media,
+          email, and ads to reach and engage target audiences effectively.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Social Media Marketing</h3>
+        <p>
+          Brand Awareness: Increases visibility and engagement through
+          platforms like Facebook, Instagram, and LinkedIn. Lead Generation:
+          Attracts potential customers with targeted ads and content. Customer
+          Engagement: Builds relationships through interactive posts,
+          comments, and direct messaging.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Social Media Management</h3>
+        <p>
+          Our comprehensive social media management services ensure your brand
+          maintains a strong, engaging, and consistent presence across all
+          relevant platforms. We handle content creation, scheduling,
+          community engagement, and performance analytics to maximize your
+          reach and foster a loyal online community.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Facebook Marketing</h3>
+        <p>
+          Leverage the power of Facebook with our targeted marketing
+          strategies. We design and execute compelling ad campaigns, optimize
+          audience targeting, and analyze performance to deliver measurable
+          results, driving leads and sales for your business.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Facebook Ads Manager</h3>
+        <p>
+          Master your Facebook advertising with our expert management
+          services. We navigate the complexities of Ads Manager to create,
+          optimize, and scale campaigns, ensuring maximum ROI and efficient
+          budget allocation for your marketing objectives.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Instagram Marketing</h3>
+        <p>
+          Elevate your brand's presence on Instagram with our strategic
+          marketing solutions. We specialize in crafting visually stunning
+          content, optimizing hashtag strategies, and engaging with your
+          audience to build a vibrant community and drive conversions.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Instagram Advertisement</h3>
+        <p>
+          Unlock Instagram's advertising potential with our expert campaign
+          management. We create highly targeted ad creatives, optimize bidding
+          strategies, and continuously monitor performance to ensure your ads
+          reach the right audience and deliver exceptional ROI.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>YouTube Marketing</h3>
+        <p>
+          Harness the power of video with our YouTube marketing expertise. We
+          develop engaging video content strategies, optimize for search
+          visibility, and manage ad campaigns to expand your audience, drive
+          traffic, and boost brand authority on the world's largest video
+          platform.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Search Engine Optimization</h3>
+        <p>
+          Improve your online visibility and organic search rankings with our
+          expert SEO services. We conduct thorough keyword research, optimize
+          on-page and off-page elements, and implement technical SEO
+          strategies to drive qualified traffic and increase your website's
+          authority.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Keyword Optimization</h3>
+        <p>
+          Boost your search engine rankings with our precise keyword
+          optimization strategies. We identify high-value keywords, analyze
+          competitor performance, and integrate them seamlessly into your
+          content to attract relevant traffic and improve your online
+          visibility.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Quality Backlinks</h3>
+        <p>
+          Enhance your website's authority and search engine ranking with our
+          strategic backlink building services. We focus on acquiring
+          high-quality, relevant backlinks from reputable sources, improving
+          your domain authority and driving organic traffic.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Technical SEO</h3>
+        <p>
+          Optimize your website's infrastructure for better search engine
+          crawling and indexing. Our technical SEO services address site
+          speed, mobile-friendliness, structured data, and other critical
+          elements to improve your site's performance and visibility in search
+          results.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>YouTube SEO</h3>
+        <p>
+          Maximize your video reach with our YouTube SEO strategies. We
+          optimize video titles, descriptions, tags, and thumbnails, and
+          implement best practices for channel optimization to ensure your
+          content ranks higher and attracts more viewers on YouTube.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>YouTube Ads</h3>
+        <p>
+          Reach your target audience effectively with our YouTube advertising
+          expertise. We create and manage compelling video ad campaigns,
+          optimize targeting, and analyze performance to maximize views,
+          engagement, and conversions on the YouTube platform.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>LinkedIn Marketing</h3>
+        <p>
+          Expand your professional network and generate B2B leads with our
+          specialized LinkedIn marketing services. We craft engaging content,
+          optimize profiles, and implement targeted outreach strategies to
+          connect you with key decision-makers and industry influencers.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Twitter Marketing</h3>
+        <p>
+          Amplify your brand's voice and engage with your audience in
+          real-time through our dynamic Twitter marketing strategies. We focus
+          on trending topics, hashtag optimization, and compelling content to
+          drive conversations and increase your brand's visibility and
+          influence.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Pinterest Marketing</h3>
+        <p>
+          Drive visual discovery and traffic with our specialized Pinterest
+          marketing services. We create captivating Pins, optimize boards for
+          search, and implement strategies to showcase your products or
+          content, turning inspiration into action for your audience.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Lead Generation</h3>
+        <p>
+          Boost your sales pipeline with our targeted lead generation
+          strategies. We employ a multi-channel approach, utilizing digital
+          advertising, content marketing, and strategic outreach to identify,
+          attract, and qualify potential customers for your business.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Search Engine Marketing</h3>
+        <p>
+          Drive immediate traffic and conversions with our comprehensive
+          Search Engine Marketing (SEM) services. We manage pay-per-click
+          (PPC) campaigns on platforms like Google Ads, optimizing bids,
+          keywords, and ad copy to ensure maximum visibility and return on
+          investment.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Paid Advertising (PPC)</h3>
+        <p>
+          Maximize your advertising ROI with our expert Paid Advertising (PPC)
+          management. We design, implement, and optimize campaigns across
+          various platforms, focusing on precise targeting, compelling ad
+          creatives, and continuous performance analysis to drive conversions
+          and achieve your marketing goals.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Keyword Targeting</h3>
+        <p>
+          Refine your advertising campaigns and content strategies with our
+          precise keyword targeting services. We identify the most relevant
+          and high-performing keywords for your niche, ensuring your message
+          reaches the most receptive audience and maximizes conversion
+          potential.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Performance Tracking</h3>
+        <p>
+          Gain actionable insights into your marketing efforts with our robust
+          performance tracking services. We set up comprehensive analytics,
+          monitor key metrics, and provide detailed reports to help you
+          understand campaign effectiveness and make data-driven decisions for
+          continuous improvement.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Email Marketing</h3>
+        <p>
+          Cultivate customer relationships and drive conversions with our
+          strategic email marketing services. We design engaging email
+          campaigns, segment audiences, and analyze performance to deliver
+          personalized content that nurtures leads and fosters customer
+          loyalty.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>MailChimp</h3>
+        <p>
+          Streamline your email campaigns with our MailChimp expertise. We
+          assist with list management, template design, automation setup, and
+          campaign execution to help you effectively connect with your
+          audience and drive engagement.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Virtual Assistant</h3>
+        <p>
+          Boost your productivity and efficiency with our professional virtual
+          assistant services. We provide comprehensive administrative,
+          technical, or creative support, allowing you to focus on core
+          business activities while we handle the rest.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Local SEO</h3>
+        <p>
+          Dominate local search results and attract nearby customers with our
+          specialized Local SEO services. We optimize your Google My Business
+          profile, manage local citations, and implement geo-targeted
+          strategies to ensure your business is easily found by local
+          consumers.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Google Ads</h3>
+        <p>
+          Achieve top search engine visibility and drive immediate traffic
+          with our expert Google Ads management. We craft highly effective
+          campaigns, conduct in-depth keyword research, optimize ad copy, and
+          continuously refine bidding strategies to maximize your return on ad
+          spend.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Canva</h3>
+        <p>
+          Empower your visual content creation with our Canva expertise. We
+          help you design stunning graphics, presentations, and marketing
+          materials efficiently, leveraging Canva's intuitive platform to
+          elevate your brand's aesthetic and messaging.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>WordPress</h3>
+        <p>
+          Build and manage powerful, flexible websites with our WordPress
+          development and management services. From custom themes and plugin
+          integration to ongoing maintenance and security, we ensure your
+          WordPress site is robust, user-friendly, and optimized for
+          performance.
+        </p>
+      </div>
+      <div class="service-item animate-on-scroll">
+        <h3>Shopify</h3>
+        <p>
+          Launch and scale your e-commerce business with our comprehensive
+          Shopify services. We specialize in store setup, theme customization,
+          product management, and app integration, creating a seamless and
+          high-converting online shopping experience for your customers.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tools" class="tools">
+    <h2 class="animate-on-scroll">Our Tool</h2>
+    <div class="tools-grid">
+      <div class="tool-item animate-on-scroll">
+        <h3>
+          <a href="https://remoteruler.github.io/Remote_Ruler/" target="_blank">Google_100_Search
+            <img src="https://img.icons8.com/ios-filled/50/000000/search--v1.png" alt="Link" style="
+                  width: 24px;
+                  height: 24px;
+                  vertical-align: middle;
+                  margin-left: 8px;
+                " /></a>
+        </h3>
+        <p>
+          1.
+          <a href="https://youtu.be/iXo7gZp0gLg?si=hlEE6SqxCtMZRgLi" target="_blank"><img
+              src="https://img.icons8.com/color/48/000000/youtube-play--v1.png" alt="Watch Demo"
+              style="width: 32px; height: 32px; vertical-align: middle" />
+            Watch Now</a>
+        </p>
+      </div>
+      <div class="tool-item animate-on-scroll">
+        <h3>
+          <a href="https://remoteruler.github.io/Clock/" target="_blank">Clock
+            <img src="https://img.icons8.com/ios-filled/24/000000/time.png" alt="Clock" style="
+                  width: 24px;
+                  height: 24px;
+                  vertical-align: middle;
+                  margin-left: 8px;
+                " /></a>
+        </h3>
+        <p>Coming Soon</p>
+      </div>
+      <div class="tool-item animate-on-scroll">
+        <h3>Next Tool to Coming Soon</h3>
+        <p>Stay tuned for our next exciting tool!</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="about" class="about">
+    <h2 class="animate-on-scroll">About Us</h2>
+    <p>
+      At
+      <a href="https://www.facebook.com/RemoteRuler" target="_blank">Remote Ruler</a>, we are more than just a service
+      provider; we are your strategic
+      partner in navigating the complexities of the digital world. Our team of
+      dedicated professionals is passionate about empowering businesses to not
+      just compete, but to thrive and lead in their respective industries. We
+      believe that a strong online presence is built on a foundation of
+      customized strategies and data-driven decisions. That's why we offer a
+      comprehensive suite of services—from Digital Marketing and Social Media
+      Management to advanced SEO and Paid Advertising—all meticulously
+      designed to deliver measurable results and help you achieve your unique
+      online goals. For in-depth tutorials, insights, and demonstrations of
+      our tools and strategies, be sure to visit our YouTube channel,
+      <a href="https://www.youtube.com/@RemoteRuler" target="_blank">Remote Ruler</a>, where we share valuable content
+      to help you succeed.
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="animate-on-scroll">Contact Us</h2>
+    <div class="contact-icons-container animate-on-scroll">
+      <a href="mailto:orbitadslab@gmail.com"><img src="https://img.icons8.com/color/48/000000/gmail--v1.png" alt="Email"
+          style="vertical-align: middle; margin-top: 10px" /></a>
+      <a href="https://wa.me/message/Q45IE4P6XYGFK1" target="_blank"><img
+          src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp"
+          style="vertical-align: middle; margin-top: 10px" /></a>
+      <a href="https://t.me/RemoteRuler" target="_blank"><img
+          src="https://img.icons8.com/color/48/000000/telegram-app--v1.png" alt="Telegram"
+          style="vertical-align: middle; margin-top: 10px" /></a>
+      <a href="https://forms.gle/TTbgwvFLVz7by1DU9" target="_blank"><img
+          src="https://img.icons8.com/color/48/000000/speech-bubble--v1.png" alt="Send Message"
+          style="vertical-align: middle; margin-top: 10px" /></a>
+      <a href="https://www.linkedin.com/in/fahim-monayem-sopnil/" target="_blank"><img
+          src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn"
+          style="vertical-align: middle; margin-top: 10px" /></a>
+      <a href="https://www.facebook.com/RemoteRuler" target="_blank"><img
+          src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="Facebook"
+          style="vertical-align: middle; margin-top: 10px" /></a>
+      <a href="https://instagram.com/remoteruler" target="_blank"><img
+          src="https://img.icons8.com/color/48/000000/instagram-new--v1.png" alt="Instagram"
+          style="vertical-align: middle; margin-top: 10px" /></a>
+      <a href="https://youtube.com/@RemoteRuler" target="_blank"><img
+          src="https://img.icons8.com/color/48/000000/youtube-play--v1.png" alt="YouTube"
+          style="vertical-align: middle; margin-top: 10px" /></a>
+      <a href="https://www.tiktok.com/@remote_ruler" target="_blank"><img
+          src="https://img.icons8.com/color/48/000000/tiktok--v1.png" alt="TikTok"
+          style="vertical-align: middle; margin-top: 10px" /></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; Remote Ruler. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
