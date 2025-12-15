@@ -1,6 +1,6 @@
 # Remote Ruler - Professional 4D Agency Website
 
-![Remote Ruler Website](https://via.placeholder.com/1200x600/0a0a0a/4facfe?text=Remote+Ruler+Agency+Preview)
+![Remote Ruler Website](https://github.com/RemoteRuler/Website/blob/main/Logo/Remote_Ruler.png)
 
 A high-end, immersive "Agency Style" portfolio website featuring **4D physics-based animations**, fluid dynamics, momentum scrolling, and an interactive audio experience.
 
