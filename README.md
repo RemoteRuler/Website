@@ -2,7 +2,7 @@
 
 A professional, high-performance portfolio website for **Fahim Monayem Sopnil**, Full Stack Developer & Digital Strategist.
 
-🚀 **Live Website**: [![Go Live](https://img.shields.io/badge/Go-Live-4da6ff?style=for-the-badge&logo=google-chrome&logoColor=white)](https://remoteruler.github.io/Website/)
+[![Go Live](https://img.shields.io/badge/Go-Live-4da6ff?style=for-the-badge&logo=google-chrome&logoColor=white)](https://remoteruler.github.io/Website/)
 
 ## ✨ Features
 
