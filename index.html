@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahim Monayem Sopnil :: Full Stack Developer & Digital Strategist</title>
+    <meta name="description" content="Full Stack Developer & Creative Digital Strategist crafting exceptional digital experiences through innovative design and advanced engineering.">
+    <meta name="keywords" content="Fahim Monayem Sopnil, Full Stack Developer, Digital Marketing, Creative Technologist, Web Development">
+    <meta property="og:title" content="Fahim Monayem Sopnil :: Creative Developer">
+    <meta property="og:description" content="Full Stack Developer & Digital Strategist crafting high-performance digital experiences.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fahim-portfolio.com/">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script>
+        history.scrollRestoration = "manual";
+    </script>
+</head>
+<body style="background-color: #000000;">
+    <!-- Background Animation -->
+    <div class="bg-animation-container">
+        <div class="bg-blob blob-1"></div>
+        <div class="bg-blob blob-2"></div>
+        <div class="bg-blob blob-3"></div>
+        <div class="bg-grid"></div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loader-wrapper" class="loader-wrapper">
+        <div class="loader-content">
+            <div class="loader-text-block">
+                <div class="loader-ascii">
+                    <p>[[</p>
+                    <p>&nbsp;&nbsp;&nbsp;[<span class="loader-highlight">initializing</span>]</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;]]]</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span class="loader-percent">00%</span>]</p>
+                    <p>&nbsp;&nbsp;[[[][]</p>
+                </div>
+            </div>
+            <div class="loader-message">
+                <p>Code transforms ideas into reality.</p>
+                <p>Design makes that reality beautiful.</p>
+                <p style="margin-top: 16px">I'm a Full Stack Developer & Digital Strategist.</p>
+                <p style="margin-top: 32px" class="loader-highlight">They call me Fahim.</p>
+                
+                <button id="enter-btn" class="enter-button" disabled>
+                    <span></span><span></span><span></span><span></span>
+                    ENTER
+                </button>
+            </div>
+        </div>
+        <audio id="bg-music" loop>
+            <source src="media/ambient.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#home">FM<span class="dot">.</span></a>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#works" class="nav-link">Works</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="hero-word">Fahim</span>
+                        <span class="hero-word">Monayem</span>
+                        <span class="hero-word">Sopnil</span>
+                    </h1>
+                    <p class="hero-subtitle">Full Stack Developer & Digital Strategist</p>
+                    <p class="hero-description">
+                        Building high-performance digital experiences through innovative design and advanced engineering. 
+                        Transforming concepts into reality with code, creativity, and strategic thinking.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#works" class="cta-button">
+                            <span class="btn-border"></span>
+                            VIEW MY WORK
+                        </a>
+                        <a href="#contact" class="cta-button secondary">
+                            <span class="btn-border"></span>
+                            GET IN TOUCH
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3>Who I Am</h3>
+                        <p>
+                            I'm a passionate full-stack developer and digital strategist with 3+ years of experience 
+                            crafting digital solutions. My expertise spans from designing beautiful interfaces to building 
+                            robust backend systems that power modern web applications.
+                        </p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <h3>What I Do</h3>
+                        <p>
+                            I develop full-stack web applications, design digital marketing strategies, optimize for search engines, 
+                            and build e-commerce platforms. Every project is approached with meticulous attention to performance, 
+                            user experience, and business objectives.
+                        </p>
+                    </div>
+
+                    <div class="about-card">
+                        <h3>Skills & Tools</h3>
+                        <div class="skills-list">
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">React</span>
+                            <span class="skill-badge">Node.js</span>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">Web Design</span>
+                            <span class="skill-badge">SEO</span>
+                            <span class="skill-badge">Digital Marketing</span>
+                            <span class="skill-badge">Shopify</span>
+                        </div>
+                    </div>
+
+                    <div class="about-card">
+                        <h3>By The Numbers</h3>
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <h4>50+</h4>
+                                <p>Projects Delivered</p>
+                            </div>
+                            <div class="stat">
+                                <h4>30+</h4>
+                                <p>Happy Clients</p>
+                            </div>
+                            <div class="stat">
+                                <h4>3+</h4>
+                                <p>Years Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works/Portfolio Section -->
+        <section id="works" class="works">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Selected Works</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="works-grid">
+                    <article class="work-card">
+                        <div class="work-image">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">Google 100 Search Tool</h3>
+                            <p class="work-description">
+                                Advanced SEO automation tool for comprehensive Google SERP analysis and keyword ranking tracking.
+                            </p>
+                            <div class="work-tags">
+                                <span>JavaScript</span>
+                                <span>SEO</span>
+                                <span>Automation</span>
+                            </div>
+                            <a href="https://remoteruler.github.io/Remote_Ruler/" target="_blank" class="work-link">
+                                Visit Project <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="work-card">
+                        <div class="work-image">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">Time Management App</h3>
+                            <p class="work-description">
+                                Interactive productivity application with advanced time tracking and task management features.
+                            </p>
+                            <div class="work-tags">
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+                                <span>UI/UX</span>
+                            </div>
+                            <a href="https://remoteruler.github.io/Clock/" target="_blank" class="work-link">
+                                Visit Project <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="work-card">
+                        <div class="work-image">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">E-Commerce Platform</h3>
+                            <p class="work-description">
+                                Full-featured Shopify store with custom theme optimization and conversion rate optimization.
+                            </p>
+                            <div class="work-tags">
+                                <span>Shopify</span>
+                                <span>E-Commerce</span>
+                                <span>CRO</span>
+                            </div>
+                            <a href="#" class="work-link coming-soon">
+                                Coming Soon
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="work-card">
+                        <div class="work-image">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">Creative Agency Website</h3>
+                            <p class="work-description">
+                                Modern portfolio website with smooth animations, scroll effects, and interactive components.
+                            </p>
+                            <div class="work-tags">
+                                <span>React</span>
+                                <span>Design</span>
+                                <span>Animation</span>
+                            </div>
+                            <a href="#" class="work-link coming-soon">
+                                Coming Soon
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="work-card">
+                        <div class="work-image">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">Analytics Dashboard</h3>
+                            <p class="work-description">
+                                Real-time data visualization dashboard with interactive charts and performance metrics.
+                            </p>
+                            <div class="work-tags">
+                                <span>Node.js</span>
+                                <span>React</span>
+                                <span>Data Viz</span>
+                            </div>
+                            <a href="#" class="work-link coming-soon">
+                                Coming Soon
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="work-card">
+                        <div class="work-image">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="work-content">
+                            <h3 class="work-title">Web Development Toolkit</h3>
+                            <p class="work-description">
+                                Collection of reusable components and utilities for rapid web development and prototyping.
+                            </p>
+                            <div class="work-tags">
+                                <span>JavaScript</span>
+                                <span>CSS</span>
+                                <span>Components</span>
+                            </div>
+                            <a href="#" class="work-link coming-soon">
+                                Coming Soon
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h3>Email</h3>
+                        <p>Reach out directly for inquiries and collaborations.</p>
+                        <a href="mailto:orbitadslab@gmail.com" class="contact-link">
+                            orbitadslab@gmail.com
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>WhatsApp</h3>
+                        <p>Quick chat for project discussions and availability.</p>
+                        <a href="https://wa.me/8801703295566" target="_blank" class="contact-link">
+                            +880 1703 295 566
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>LinkedIn</h3>
+                        <p>Professional connections and industry insights.</p>
+                        <a href="https://www.linkedin.com/in/fahim-monayem-sopnil/" target="_blank" class="contact-link">
+                            View Profile
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>GitHub</h3>
+                        <p>Explore my code and open-source contributions.</p>
+                        <a href="https://github.com/RemoteRuler" target="_blank" class="contact-link">
+                            @RemoteRuler
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-footer">
+                    <p>Available for freelance projects, collaborations, and full-time opportunities.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/fahim-monayem-sopnil/" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/RemoteRuler" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.facebook.com/Verified.Sopnil" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com/remoteruler" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://t.me/RemoteRuler" target="_blank" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <p>&copy; <span id="year"></span> Fahim Monayem Sopnil. All rights reserved.</p>
+                <p class="footer-tagline">Crafted with code and creativity.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
