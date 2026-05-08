@@ -5,7 +5,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const loaderWrapper = document.getElementById('loader-wrapper');
     const enterBtn = document.getElementById('enter-btn');
     const loaderPercent = document.querySelector('.loader-percent');
+    const progressBar = document.getElementById('loader-progress-bar');
+    const dataLog = document.getElementById('loader-data-log');
+    const codeBg = document.querySelector('.loader-code-bg');
     const mainContent = document.getElementById('main-content');
+
+    const logMessages = [
+        "FETCHING CORE ASSETS...",
+        "INITIALIZING VIRTUAL DOM...",
+        "LOADING SHADERS...",
+        "SYNCING AMBIENCE...",
+        "OPTIMIZING TEXTURES...",
+        "ESTABLISHING SECURE PROTOCOLS...",
+        "DECRYPTING DESIGN TOKENS...",
+        "SYNCHRONIZING REPOSITORY...",
+        "PREPARING CONTENT PROTECTIONS...",
+        "READY TO DEPLOY."
+    ];
+
+    const codeSnippets = [
+        "function init() {",
+        "  const core = new System();",
+        "  core.boot();",
+        "  return true;",
+        "}",
+        "class Node { constructor() {",
+        "  this.state = 'active';",
+        "}}",
+        "const auth = (token) => {",
+        "  return verify(token);",
+        "}"
+    ];
 
     // Set initial state
     if (mainContent) {
@@ -15,11 +45,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Simulate loading progress
     let progress = 0;
+    let logIndex = 0;
+
     const loadingInterval = setInterval(() => {
-        progress += Math.random() * 30;
+        progress += Math.random() * 0.4; // Extreme slowdown
         if (progress > 100) progress = 100;
+        
+        const displayPercent = Math.floor(progress);
+        
         if (loaderPercent) {
-            loaderPercent.textContent = String(Math.floor(progress)).padStart(2, '0') + '%';
+            loaderPercent.textContent = String(displayPercent).padStart(2, '0') + '%';
+        }
+
+        if (progressBar) {
+            progressBar.style.width = displayPercent + '%';
+        }
+
+        // Add log messages based on progress thresholds
+        const threshold = (logIndex + 1) * (100 / logMessages.length);
+        if (progress >= threshold && logIndex < logMessages.length) {
+            const p = document.createElement('p');
+            p.textContent = `> ${logMessages[logIndex]}`;
+            dataLog.appendChild(p);
+            dataLog.scrollTop = dataLog.scrollHeight;
+            
+            // Add a background code snippet too
+            if (codeBg && codeSnippets[logIndex]) {
+                const span = document.createElement('div');
+                span.style.padding = '10px';
+                span.textContent = codeSnippets[logIndex];
+                codeBg.appendChild(span);
+            }
+            
+            logIndex++;
         }
         
         if (progress >= 100) {
@@ -30,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 enterBtn.style.opacity = '1';
             }
         }
-    }, 300);
+    }, 50);
 
     // Enter button click handler
     if (enterBtn) {

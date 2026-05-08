@@ -34,16 +34,32 @@
 
     <!-- Loading Screen -->
     <div id="loader-wrapper" class="loader-wrapper">
+        <div class="loader-scanning-line"></div>
+        <div class="loader-bg-grid"></div>
+        <div class="loader-radar"></div>
+        <div class="loader-code-bg"></div>
+        
+        <div class="corner-bracket top-left"></div>
+        <div class="corner-bracket top-right"></div>
+        <div class="corner-bracket bottom-left"></div>
+        <div class="corner-bracket bottom-right"></div>
+        
         <div class="loader-content">
+            <div class="loader-data-log" id="loader-data-log"></div>
+            
             <div class="loader-text-block">
                 <div class="loader-ascii">
                     <p>[[</p>
-                    <p>&nbsp;&nbsp;&nbsp;[<span class="loader-highlight">initializing</span>]</p>
+                    <p>&nbsp;&nbsp;&nbsp;[<span class="loader-highlight glitch-text" data-text="initializing">initializing</span>]</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;]]]</p>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span class="loader-percent">00%</span>]</p>
                     <p>&nbsp;&nbsp;[[[][]</p>
                 </div>
+                <div class="loader-progress-container">
+                    <div class="loader-progress-bar" id="loader-progress-bar"></div>
+                </div>
             </div>
+            
             <div class="loader-message">
                 <p>Code transforms ideas into reality.</p>
                 <p>Design makes that reality beautiful.</p>
