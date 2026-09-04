@@ -22,4 +22,4 @@ The source code, design elements, animations, and media assets contained in this
 
 - **Email**: orbitadslab@gmail.com
 - **LinkedIn**: [Fahim Monayem Sopnil](https://www.linkedin.com/in/fahim-monayem-sopnil/)
-- **WhatsApp**: +880 1703 295 566
+- **WhatsApp**: [Fahim Monayem Sopnil](https://wa.me/8801945488669)
